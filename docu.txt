@@ -1,0 +1,25 @@
+An easy, correct way to implement __hash__() is to use a key tuple. It won't be as fast as a specialized hash, but if you need that then you should probably implement the type in C.
+Here's an example of using a key for hash and equality:
+class A:
+    def __key(self):
+        return (self.attr_a, self.attr_b, self.attr_c)
+
+    def __hash__(self):
+        return hash(self.__key())
+
+    def __eq__(self, other):
+        return isinstance(self, type(other)) and self.__key() == other.__key()
+
+
+You can make sure that pip is up-to-date by running:
+
+py -m pip install --upgrade pip
+
+
+Start the notebook server from the command line:
+
+jupyter notebook
+
+VSCODE python environments
+https://code.visualstudio.com/docs/python/environments
+
