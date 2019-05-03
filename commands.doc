@@ -1,0 +1,12 @@
+You can make sure that pip is up-to-date by running:
+
+py -m pip install --upgrade pip
+
+
+Start the notebook server from the command line:
+
+jupyter notebook
+
+VSCODE python environments
+https://code.visualstudio.com/docs/python/environments
+
