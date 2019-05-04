@@ -1,6 +1,8 @@
 .idea
+.git
 venv
 .vscode
 __pycache__
 
 
+:wq
