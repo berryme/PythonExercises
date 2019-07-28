@@ -1,13 +1,14 @@
-from IPython.display import clear_output
 import random
+
+from IPython.display import clear_output
 
 
 def display_board(board):
     clear_output()
     print(board[1] + '|' + board[2] + '|' + board[3])
-    print( "_____")
+    print("_____")
     print(board[4] + '|' + board[5] + '|' + board[6])
-    print( "_____")
+    print("_____")
     print(board[7] + '|' + board[8] + '|' + board[9])
 
 
@@ -17,12 +18,12 @@ def player_input():
     while player1.upper() not in ['X', 'O']:
         player1 = input("Please pick a marker 'X' or 'O'")
 
-     if player1 =='X':
-         player2 == 'O'
-     else:
-         player2 == 'X'
+    if player1 == 'X':
+        player2 == 'O'
+    else:
+        player2 == 'X'
 
-    return (player1,player2)
+    return (player1, player2)
 
 
 def place_marker(board, marker, position):
@@ -115,8 +116,5 @@ while True:
     game_on = True
     while game_on:
 
-
-    # pass
-
-    if not replay():
-        break
+        if not replay():
+            break

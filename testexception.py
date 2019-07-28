@@ -1,8 +1,11 @@
 import unittest
+
 from berryexception import BerryException
+
 
 def raise_ex(key):
     raise BerryException(key)
+
 
 class MyTestCase(unittest.TestCase):
 
@@ -28,8 +31,6 @@ class MyTestCase(unittest.TestCase):
             print(e.message)
             self.assertEqual('Generic message', e.message)
 
+
 if __name__ == '__main__':
     unittest.main()
-
-
-

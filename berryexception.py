@@ -2,7 +2,7 @@ import enum
 
 
 class BerryException(Exception):
-    keys = enum.Enum('keys','ONE TWO UNKNOWN')
+    keys = enum.Enum('keys', 'ONE TWO UNKNOWN')
     __errors = {keys.ONE: 'Error One'}
 
     def __init__(self, key):
