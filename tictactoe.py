@@ -106,13 +106,15 @@ print('Welcome to Tic Tac Toe!')
 while True:
     # Set the game up here
     board = ['#', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ']
+    player1_marker, player2_marker = player_input()
+    turn = choose_first()
+    print(turn + 'will go first')
+
     display_board(board)
     # pass
     game_on = True
     while game_on:
-    # Player 1 Turn
 
-    # Player2's turn.
 
     # pass
 
