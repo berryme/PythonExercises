@@ -42,3 +42,9 @@ $ pip install -r requirements.txt --upgrade
 
 
 SHIFT TAB in Jupyter notebook shows signature of methods
+
+pip list --outdated
+
+pip install ipython jedi --upgrade
+Powershell
+pip freeze | %{$_.split('==')[0]} | %{pip install --upgrade $_}
